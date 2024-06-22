@@ -51,120 +51,182 @@
 </font>
 
     </b>
-</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Make By 추적 60분</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: #000000;
-            background-color: #000000;
-            overflow: hidden;
-        }
-
-        h1, h3 {
-            color: #ffffff;
-        }
-
-        .cmd-text-container {
-            position: relative;
-        }
-
-        .cmd-text {
-            color: #000000;
-            font-size: 9px;
-            font-family: Arial, sans-serif;
-            white-space: nowrap;
-            position: absolute;
-            animation: scrollText 20s linear infinite;
-            transform: translateX(100%);
-            -webkit-text-stroke: 1px Orange;
-        }
-
-        .gray-text {
-            color: #000000;
-            outline: 1px solid #000000;
-        }
-
-        .json-data {
-            font-family: Arial, sans-serif;
-            color: Orange;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        }
-
-        .json-data span {
-            color: black;
-        }
-
-        @keyframes scrollText {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        .cmd-text:hover {
-            animation-play-state: paused;
-        }
-
-        video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            filter: blur(10px);
-        }
-
-        /* Hide the audio controls */
-        audio {
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Text</title>
-    <style>
-        @keyframes lightning {
-            0% { color: orange; }
-            50% { color: green; }
-            100% { color: white; }
-        }
-
-        .animated-text {
-            animation: lightning 1s linear infinite;
-        }
-    </style>
-</head>
-<body>
-    <h3 class="animated-text">박제는 역시 추적60분</h3>
-</body>
-</html>
-   
+  </p>
 
 
-    <!-- Hidden audio element with autoplay -->
-    <audio autoplay loop style="display: none;">
-        <source src="" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+
+
+
+  <title>60SEC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #000000;
+      background-color: #000000;
+      overflow: hidden;
+    }
+
+    h1,
+    h3 {
+      color: #ffffff;
+    }
+
+    #ip-address {
+      color: Orange;
+    }
+
+    #ip-info {
+      font-family: Arial, sans-serif;
+      white-space: pre;
+      color: Orange;
+    }
+
+    .cmd-text-container {
+      position: relative;
+    }
+
+    .cmd-text {
+      color: #000000;
+      font-size: 9px;
+      font-family: Arial, sans-serif;
+      white-space: nowrap;
+      position: absolute;
+      animation: scrollText 20s linear infinite;
+      transform: translateX(100%);
+      -webkit-text-stroke: 1px Orange;
+      text-stroke: 1px Orange;
+    }
+
+    .gray-text {
+      color: #000000;
+      outline: 1px solid #000000;
+    }
+
+    .json-data {
+      font-family: Arial, sans-serif;
+      color: Orange;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    }
+
+    .json-data span {
+      color: black;
+    }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .cmd-text:hover {
+      animation-play-state: paused;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      filter: blur(10px);
+    }
+
+    /* Hide the audio controls */
+    audio {
+      display: none;
+    }
+  </style>
+
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Text</title>
+  <style>
+    @keyframes lightning {
+      0% {
+        color: orange;
+      }
+
+      50% {
+        color: green;
+      }
+
+      100% {
+        color: white;
+      }
+    }
+
+    .animated-text {
+      animation: lightning 1s linear infinite;
+    }
+  </style>
+
+
+  <h3 class="animated-text">모든유저 IP 수집 완료</h3>
+
+
+  <p id="ip-address">
+    <span style="color: rgb(238, 10, 10);">IP : </span>
+    <span id="ip-address-value" style="color: Orange; font-size: 17px;"></span>
+  </p>
+ <!-- Hidden audio element with autoplay -->
+ <audio autoplay loop style="display: none;">
+  <source src="" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <video style="width: 100vw; height: 100vh;" controls autoplay loop muted>
-    <source src="https://cdn.discordapp.com/avatars/1251518951112970323/710fc78de8d3c26e41987c906a459e5b.png?size=1024">
-    Your browser does not support the video element.
+<source src="https://cdn.discordapp.com/avatars/1251518951112970323/710fc78de8d3c26e41987c906a459e5b.png?size=1024">
+Your browser does not support the video element.
 </video>
 
 
+<!-- </html> -->
+
+  <div class="cmd-text" style="font-size: 17px; text-stroke: 3px black; color: black;"> 박제는 역시 추적60분
+    https://discord.gg/KfPqQ6peBd</div>
+  </div>
+
+
+  <script>
+    function fetchIPAndInfo() {
+      // Fetching user's IP address using ipinfo.io
+      fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          const ip = data.ip;
+          // Display IP address
+          document.getElementById('ip-address-value').textContent = ip;
+
+          // Fetch IP information using ipinfo.io
+          fetch(`https://ipinfo.io/${ip}/json`)
+            .then(response => response.json())
+            .then(ipInfoData => {
+              // Display IP information
+              document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
+            })
+            .catch(error => {
+              console.error('Error fetching IP information:', error);
+            });
+        })
+        .catch(error => {
+          console.error('Error fetching IP address:', error);
+
+
+        });
+    }
+
+    fetchIPAndInfo();
+  </script>
+
+
 </body>
+
 </html>
