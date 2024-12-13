@@ -1,232 +1,28 @@
-
-
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Make By [ 삐사회 ]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 100vh;
+            overflow: hidden;
+        }
+        video {
+            width: 1920px;
+            height: 1080px;
+        }
+    </style>
 </head>
-<body bgcolor="#000000">
-<script>
-    //var names = [
-    //    { name: "[ 추적 60분 @jabogogo ]", color: "red" },
-    //   { name: "[ 추적 60분 @lswn03 ]", color: "yellow" },
-    //    { name: "[ 추적 60분 @noru0595 ]", color: "green" },
-    //];
-
-    var nameIndex = 0;
-
-    function changeNames() {
-        var currentName = names[nameIndex];
-        document.getElementById("name").textContent = currentName.name;
-        document.getElementById("name").style.color = currentName.color;
-        nameIndex = (nameIndex + 1) % names.length;
-    }
-
-    // Change the names every 1 second
-    setInterval(changeNames, 1500);
-</script>
-<p align="center">
-    <img border="0" src="https://media.discordapp.net/attachments/1259010130901598260/1264534939060146307/image.png?ex=669e396f&is=669ce7ef&hm=d088635b5bbb8206be109a8a51154bca792c1ac31626ae3d36bda8a606fbca12&=&format=webp&quality=lossless" width="750" height="500">
-</p>
-<p align="center">
-    <font face="Courier" size="6" style="color: #000000;">
-        <span style="color: orange;">Hacked By [ 삐사회 ]</span>
-        <span id="name"></span>
-    </font>
-</p>
-<p align="center">
-    <b>
-<font face="Courier" color="#000000">
-<a href="https://discord.gg/DuHYQCCSCE " style="font-size: 24px; color: green; text-decoration: none;">Discord.gg/</a>
-<span style="font-size: 24px; color: white;">DuHYQCCSCE</span><br>
-<a href="https://discord.gg/DuHYQCCSCE" style="font-size: 24px; color: green; text-decoration: none;">Discord.gg/</a>
-<span style="font-size: 24px; color: white;">DuHYQCCSCE</span>
-
-
-
-</font>
-
-    </b>
-  </p>
-
-
-
-
-
-  <title>이재서</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: #000000;
-      background-color: #000000;
-      overflow: hidden;
-    }
-
-    h1,
-    h3 {
-      color: #ffffff;
-    }
-
-    #ip-address {
-      color: Orange;
-    }
-
-    #ip-info {
-      font-family: Arial, sans-serif;
-      white-space: pre;
-      color: Orange;
-    }
-
-    .cmd-text-container {
-      position: relative;
-    }
-
-    .cmd-text {
-      color: #000000;
-      font-size: 9px;
-      font-family: Arial, sans-serif;
-      white-space: nowrap;
-      position: absolute;
-      animation: scrollText 20s linear infinite;
-      transform: translateX(100%);
-      -webkit-text-stroke: 1px Orange;
-      text-stroke: 1px Orange;
-    }
-
-    .gray-text {
-      color: #000000;
-      outline: 1px solid #000000;
-    }
-
-    .json-data {
-      font-family: Arial, sans-serif;
-      color: Orange;
-      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    }
-
-    .json-data span {
-      color: black;
-    }
-
-    @keyframes scrollText {
-      0% {
-        transform: translateX(100%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .cmd-text:hover {
-      animation-play-state: paused;
-    }
-
-    video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      filter: blur(10px);
-    }
-
-    /* Hide the audio controls */
-    audio {
-      display: none;
-    }
-  </style>
-
-
-
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Text</title>
-  <style>
-    @keyframes lightning {
-      0% {
-        color: orange;
-      }
-
-      50% {
-        color: green;
-      }
-
-      100% {
-        color: white;
-      }
-    }
-
-    .animated-text {
-      animation: lightning 1s linear infinite;
-    }
-  </style>
-
-
-  <h3 class="animated-text">모든유저 IP 수집 완료</h3>
-
-
-  <p id="ip-address">
-    <span style="color: rgb(238, 10, 10);">IP : </span>
-    <span id="ip-address-value" style="color: Orange; font-size: 17px;"></span>
-  </p>
- <!-- Hidden audio element with autoplay -->
- <audio autoplay loop style="display: none;">
-  <source src="" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<video style="width: 100vw; height: 100vh;" controls autoplay loop muted>
-<source src="https://media.discordapp.net/attachments/1259010130901598260/1264534939060146307/image.png?ex=669e396f&is=669ce7ef&hm=d088635b5bbb8206be109a8a51154bca792c1ac31626ae3d36bda8a606fbca12&=&format=webp&quality=lossless">
-Your browser does not support the video element.
-</video>
-
-
-<!-- </html> -->
-
-  <div class="cmd-text" style="font-size: 17px; text-stroke: 3px black; color: black;"> 박제는 역시 이재서
-    https://discord.gg/DuHYQCCSCE</div>
-  </div>
-
-
-  <script>
-    function fetchIPAndInfo() {
-      // Fetching user's IP address using ipinfo.io
-      fetch('https://api64.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => {
-          const ip = data.ip;
-          // Display IP address
-          document.getElementById('ip-address-value').textContent = ip;
-
-          // Fetch IP information using ipinfo.io
-          fetch(`https://ipinfo.io/${ip}/json`)
-            .then(response => response.json())
-            .then(ipInfoData => {
-              // Display IP information
-              document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
-            })
-            .catch(error => {
-              console.error('Error fetching IP information:', error);
-            });
-        })
-        .catch(error => {
-          console.error('Error fetching IP address:', error);
-
-
-        });
-    }
-
-    fetchIPAndInfo();
-  </script>
-
-
+<body>
+    <video autoplay loop muted>
+        <source src="https://cdn.discordapp.com/attachments/1295357841380610058/1317140053209776180/y2mate.com_-_MV_APT_720p.mp4?ex=675d99c3&is=675c4843&hm=29d3bd99249f9f492b7274a8d02817074ef16d2f952b7a1034abaf0b55742e61&" type="video/mp4">
+    </video>
 </body>
-
 </html>
